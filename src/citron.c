@@ -2139,7 +2139,7 @@ static Bool cit_GetInitialErrors(cit_PrivatePtr priv)
 	{
 		cit_SetBlockDuration(priv, 500000);
 		res = cit_GetPacket(priv);
-		if ((res == Success) || (priv->lex_mode == cit_idle));
+		if ((res == Success) || (priv->lex_mode == cit_idle))
 			break;
 	}
 	if (res != Success)
@@ -2267,7 +2267,7 @@ static Bool cit_GetDefectiveBeams(cit_PrivatePtr priv)
 	{
 		cit_SetBlockDuration(priv, 500000);
 		res = cit_GetPacket(priv);
-		if ((res == Success) || (priv->lex_mode == cit_idle));
+		if ((res == Success) || (priv->lex_mode == cit_idle))
 			break;
 	}
 	if (res != Success)
@@ -2348,7 +2348,7 @@ static Bool cit_GetDesignator(cit_PrivatePtr priv)
 	{
 		cit_SetBlockDuration(priv, 500000);
 		res = cit_GetPacket(priv);
-		if ((res == Success) || (priv->lex_mode == cit_idle));
+		if ((res == Success) || (priv->lex_mode == cit_idle))
 			break;
 	}
 	if (res != Success)
@@ -2738,7 +2738,7 @@ static Bool cit_GetPressureSensors(cit_PrivatePtr priv)
 	{
 		cit_SetBlockDuration(priv, 500000);
 		res = cit_GetPacket(priv);
-		if ((res == Success) || (priv->lex_mode == cit_idle));
+		if ((res == Success) || (priv->lex_mode == cit_idle))
 			break;
 	}
 	if (res != Success)
