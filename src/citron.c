@@ -25,7 +25,7 @@
  *
  */
 
-/* $XFree86: xc/programs/Xserver/hw/xfree86/input/citron/citron.c,v 1.12 2003/11/06 18:38:11 tsi Exp $ */
+/* $XFree86: xc/programs/Xserver/hw/xfree86/input/citron/citron.c,v 1.11tsi Exp $ */
 
 /*
  * Based, in part, on code with the following copyright notice:
@@ -279,7 +279,7 @@ static XF86ModuleVersionInfo VersionRec =
 	MODULEVENDORSTRING,			/* vendor specific string */
 	MODINFOSTRING1,				
 	MODINFOSTRING2,
-	XF86_VERSION_CURRENT,		/* Current XFree version */
+	XORG_VERSION_CURRENT,		/* Current XFree version */
 	CITOUCH_VERSION_MAJOR,		/* Module-specific major version */
 	CITOUCH_VERSION_MINOR,		/* Module-specific minor version */
 	CITOUCH_VERSION_PATCH,		/* Module-specific patch level */
