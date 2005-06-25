@@ -237,7 +237,7 @@ static int      debug_level = 0;
 static InputInfoPtr CitronPreInit(InputDriverPtr drv, IDevPtr dev, int flags);
 
 
-InputDriverRec CITRON = {
+_X_EXPORT InputDriverRec CITRON = {
 	1,
 	"citron",
 	NULL,
@@ -319,7 +319,11 @@ TearDownProc (pointer p)
 }
 
 
-XF86ModuleData citronModuleData = { &VersionRec, SetupProc, TearDownProc};
+_X_EXPORT XF86ModuleData citronModuleData = {
+    &VersionRec,
+    SetupProc,
+    TearDownProc
+};
 
 #endif /* XFree86LOADER */
 
