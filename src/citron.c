@@ -136,7 +136,7 @@ char version[]="Touch Driver V2.1.1  (c) 1999-2003 Citron GmbH";
  *	Standard Headers
  ****************************************************************************/
 
-#include "misc.h"
+#include <X11/misc.h>
 #include "xf86.h"
 #define NEED_XF86_TYPES
 #include "xf86_ansic.h"
