@@ -118,6 +118,9 @@
 
 */
 
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
 
 #define _citron_C_
 #define PK	0
