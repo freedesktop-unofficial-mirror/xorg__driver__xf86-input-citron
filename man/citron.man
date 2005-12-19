@@ -2,6 +2,7 @@
 .\" $Id$
 .\"
 .\" $XFree86: xc/programs/Xserver/hw/xfree86/input/citron/citron.man,v 1.2 2001/01/27 18:20:57 dawes Exp $
+.\" $XdotOrg: $
 .\"
 .\" shorthand for double quote that works everywhere.
 .ds q \N'34'
@@ -347,7 +348,7 @@ After also the interruption is released a ProximityOut event is generated.
 
 .I \*q5\*q = ClickMode ZPress Exit
 
-This mode is similat to "Clickmode Dual Exit". 
+This mode is similar to "Clickmode Dual Exit". 
 The first interruption of the beams will sent a ProximityIn event. Only if
 a certain pressure is exceeded a ButtonPress event will occur. If the
 pressure falls below a certain limit no ButtonRelease event will be sent.
