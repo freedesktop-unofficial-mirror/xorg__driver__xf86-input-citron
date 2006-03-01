@@ -159,7 +159,7 @@ char version[]="Touch Driver V2.1.5  (c) 1999-2006 Citron GmbH";
 #include "exevents.h"				/* Needed for InitValuator/Proximity stuff*/
 
 
-#include <keysym.h>
+#include <X11/keysym.h>
 
 
 /* I have to explicit declare this function, because I get an error if I compile */
