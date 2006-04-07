@@ -131,13 +131,15 @@
 #include "config.h"
 #endif
 
+#include <string.h>
+
 #define _citron_C_
 #define PK	0
 #define INITT 0		/* Initialisation of touch in first loop */
 
 
-#define CITOUCH_VERSION	0x215
-char version[]="Touch Driver V2.1.5  (c) 1999-2006 Citron GmbH";
+#define CITOUCH_VERSION	0x220
+char version[]="Touch Driver V2.2.0  (c) 1999-2006 Citron GmbH";
 
 #define CITOUCH_VERSION_MAJOR ((CITOUCH_VERSION >> 8) & 0xf)
 #define CITOUCH_VERSION_MINOR ((CITOUCH_VERSION >> 4) & 0xf)
@@ -151,7 +153,6 @@ char version[]="Touch Driver V2.1.5  (c) 1999-2006 Citron GmbH";
 #include "misc.h"
 #include "xf86.h"
 #define NEED_XF86_TYPES
-#include "xf86_ansic.h"
 #include "xf86_OSproc.h"
 /*#include "xf86Optrec.h" */
 #include "xf86Xinput.h"
