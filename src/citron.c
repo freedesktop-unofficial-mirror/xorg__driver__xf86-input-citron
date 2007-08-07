@@ -138,12 +138,12 @@
 #define INITT 0		/* Initialisation of touch in first loop */
 
 
-#define CITOUCH_VERSION	0x220
 char version[]="Touch Driver V2.2.0  (c) 1999-2006 Citron GmbH";
 
-#define CITOUCH_VERSION_MAJOR ((CITOUCH_VERSION >> 8) & 0xf)
-#define CITOUCH_VERSION_MINOR ((CITOUCH_VERSION >> 4) & 0xf)
-#define CITOUCH_VERSION_PATCH ((CITOUCH_VERSION >> 0) & 0xf)
+#define CITOUCH_VERSION PACKAGE_VERSION
+#define CITOUCH_VERSION_MAJOR PACKAGE_VERSION_MAJOR
+#define CITOUCH_VERSION_MINOR PACKAGE_VERSION_MINOR
+#define CITOUCH_VERSION_PATCH PACKAGE_VERSION_PATCHLEVEL
 
 
 /*****************************************************************************
