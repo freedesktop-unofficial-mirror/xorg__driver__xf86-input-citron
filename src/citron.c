@@ -2020,7 +2020,7 @@ static void cit_ProcessPacket(cit_PrivatePtr priv)
 static int
 ControlProc (LocalDevicePtr local, xDeviceCtl * control)
 {
-	xDeviceTSCalibrationCtl *c = (xDeviceTSCalibrationCtl *) control;
+	xDeviceAbsCalibCtl *c = (xDeviceAbsCalibCtl *) control;
 	cit_PrivatePtr priv = (cit_PrivatePtr) (local->private);
 
  	DBG(5, ErrorF("%sControlProc called\n", CI_INFO));

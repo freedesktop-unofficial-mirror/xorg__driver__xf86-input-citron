@@ -72,7 +72,7 @@ AC_SUBST(inputdir)
 
 # Checks for extensions
 XORG_DRIVER_CHECK_EXT(RANDR, randrproto)
-XORG_DRIVER_CHECK_EXT(XINPUT, inputproto)
+XORG_DRIVER_CHECK_EXT(XINPUT, [inputproto >= 1.4.1])
 
 # Checks for pkg-config packages
 PKG_CHECK_MODULES(XORG, [xorg-server >= 1.0.99.901] xproto $REQUIRED_MODULES)
