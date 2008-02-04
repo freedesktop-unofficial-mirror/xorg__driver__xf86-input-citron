@@ -2058,12 +2058,14 @@ SwitchMode (ClientPtr client, DeviceIntPtr dev, int mode)
 		DBG(6, ErrorF("%s\treporting mode = %s\n", CI_INFO, mode==TS_Raw?"raw":"scaled"));
 		return (Success);
 	}
+#if GET_ABI_MAJOR(ABI_XINPUT_VERSION) == 0
 	else if ((mode == SendCoreEvents) || (mode == DontSendCoreEvents))
 	{
 		xf86XInputSetSendCoreEvents (local, (mode == SendCoreEvents));
 		DBG(6, ErrorF("%s\tmode = %sSend Core Events\n", CI_INFO, mode==DontSendCoreEvents?"Don\'t ":""));
 		return (Success);
 	}
+#endif
 #ifdef CIT_MODE_EXT
 	else if (mode == ClickMode_Enter)
 	{
@@ -2466,6 +2468,7 @@ cit_Beep(cit_PrivatePtr priv, int press)
 	if(priv->beep == 0)
 		return;
 
+#if GET_ABI_MAJOR(ABI_XINPUT_VERSION) == 0
 	/* ring release bell */
 	if(press == 0)
 
@@ -2492,6 +2495,7 @@ cit_Beep(cit_PrivatePtr priv, int press)
 	else
 	/* ring press bell */
 		xf86SoundKbdBell(priv->press_vol,priv->press_pitch, priv->press_dur);
+#endif
 
 	DBG(7, ErrorF("%scit_Beep called - %s\n", CI_INFO, (press == 0) ? "release" : "press"));
 #endif
@@ -2508,6 +2512,7 @@ cit_BeepKey(cit_PrivatePtr priv, int press)
 	if(priv->beepkey == 0)
 		return;
 
+#if GET_ABI_MAJOR(ABI_XINPUT_VERSION) == 0
 	/* ring release bell */
 	if(press <= 0)
 
@@ -2532,6 +2537,7 @@ cit_BeepKey(cit_PrivatePtr priv, int press)
 	else
 	/* ring press bell */
 		xf86SoundKbdBell(priv->presskey_vol,priv->presskey_pitch, priv->presskey_dur);
+#endif
 
 	DBG(7, ErrorF("%scit_BeepKey called - %s\n", CI_INFO, (press == 0) ? "release" : "press"));
 #endif
