@@ -1368,7 +1368,10 @@ DeviceInit (DeviceIntPtr dev)
 	 * screen to fit one meter.
 	 * Device may reports touch pressure on the 3rd axis.
 	 */
-	if (InitValuatorClassDeviceStruct (dev, 2, xf86GetMotionEvents,
+	if (InitValuatorClassDeviceStruct (dev, 2,
+#if GET_ABI_MAJOR(ABI_XINPUT_VERSION) < 3
+                    xf86GetMotionEvents,
+#endif
 									local->history_size, Absolute) == FALSE)
 	{
 		ErrorF ("%sUnable to allocate Citron touchscreen ValuatorClassDeviceStruct\n", CI_ERROR);
