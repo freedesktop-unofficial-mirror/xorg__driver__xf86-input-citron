@@ -305,7 +305,7 @@ static XF86ModuleVersionInfo VersionRec =
 	MODULEVENDORSTRING,			/* vendor specific string */
 	MODINFOSTRING1,				
 	MODINFOSTRING2,
-	XF86_VERSION_CURRENT,		/* Current XFree version */
+	XORG_VERSION_CURRENT,		/* Current Xorg version */
 	CITOUCH_VERSION_MAJOR,		/* Module-specific major version */
 	CITOUCH_VERSION_MINOR,		/* Module-specific minor version */
 	CITOUCH_VERSION_PATCH,		/* Module-specific patch level */
