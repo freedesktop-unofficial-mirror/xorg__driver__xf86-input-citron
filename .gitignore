@@ -22,3 +22,5 @@ stamp-h1
 .deps
 .libs
 man/citron.?
+xf86-input-citron-*.tar.*
+tags
