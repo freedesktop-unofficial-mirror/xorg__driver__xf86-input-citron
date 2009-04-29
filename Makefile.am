@@ -20,7 +20,7 @@
 
 AUTOMAKE_OPTIONS = foreign
 SUBDIRS = src man
-EXTRA_DIST = ChangeLog
+
 EXTRA_DIST = ChangeLog
 MAINTAINERCLEANFILES = ChangeLog
 
