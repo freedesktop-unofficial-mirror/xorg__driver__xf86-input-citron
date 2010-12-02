@@ -92,4 +92,11 @@ XORG_MANPAGE_SECTIONS
 XORG_RELEASE_VERSION
 XORG_CHANGELOG
 
+AC_MSG_ERROR([
+              **************************************************************
+              This driver is unmaintained and will not receive further
+              patches. If you have a need for this driver, please file a bug
+              on http://bugs.freedesktop.org.
+              **************************************************************])
+
 AC_OUTPUT([Makefile src/Makefile man/Makefile])
